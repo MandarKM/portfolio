@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'sarabun', sans-serif;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 10;
+    pointer-events: none;
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('/pexels-cátia-matos-1072179.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    color: rgb(250, 241, 241);
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: rgb(250, 241, 241);;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    
+}
+
+.about-title{
+    font-size: 30px;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    writing-mode: vertical-lr;
+    float: right;
+    pointer-events: none;
+    
+}
+.about-pages{
+    width: 80%;
+    position: relative;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    scroll-snap-type: y mandatory;
+
+}
+.about-pages div{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    color: rgb(250, 241, 241); 
+    scroll-snap-align: start;
+}
+
+
+.about-pages p{
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about-pages div:nth-child(1){
+    background-color: rgb(56, 134, 89);
+}
+.about-pages div:nth-child(2){
+    background-color: rgb(140, 157, 229);
+}
+.about-pages div:nth-child(3){
+    background-color: rgb(110, 110, 108);
+}
+.about-pages div:nth-child(4){
+    background-color: rgb(110, 107, 223);
+    
+}
+.about-pages div:nth-child(5){
+    
+    background-color: rgb(217, 125, 125);
+}
+.about-pages div:nth-child(6){
+    background-color: rgb(140, 76, 204);
+}
+
+.about-pages div:nth-child(3), ul{
+    padding-left: 20px;
+}
+
+.about-pages div:nth-child(4), ul{
+    padding-left: 20px;
+}
+
+.about-pages div:nth-child(5), ul{
+    padding-left: 20px;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    color: whitesmoke;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+footer, img{
+    padding: 5px;
+}
